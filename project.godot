@@ -1,0 +1,47 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="sei la irmao"
+run/main_scene="uid://bnbhu1shht5du"
+config/features=PackedStringArray("4.5", "Mobile")
+config/icon="res://icon.svg"
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+renderer/rendering_method="mobile"
+
+[shader_globals]
+
+outline_color={
+"type": "color",
+"value": Color(0, 0, 0, 1)
+}
+outline_width={
+"type": "float",
+"value": 4.0
+}
+specular_smoothness={
+"type": "float",
+"value": 0.05
+}
+fresnel_smoothness={
+"type": "float",
+"value": 0.05
+}
+diffuse_curve={
+"type": "sampler2D",
+"value": "::cq2vc"
+}
