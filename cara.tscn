@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://bi3w0rvqqvklw"]
+
+[ext_resource type="Texture2D" uid="uid://dnw0hwj3cy5iv" path="res://textures/Grass005_1K-JPG_Color.jpg" id="1_wjh8v"]
+[ext_resource type="Texture2D" uid="uid://codgdqcbp6sdx" path="res://textures/Grass005_1K-JPG_NormalGL.jpg" id="2_7qd4x"]
+[ext_resource type="Texture2D" uid="uid://cthvah1qq0san" path="res://textures/Grass005_1K-JPG_Roughness.jpg" id="3_57obe"]
+[ext_resource type="Texture2D" uid="uid://4iaovqeym8bm" path="res://foliage/sprite_0063.png" id="4_r08tg"]
+[ext_resource type="Texture2D" uid="uid://cnh21cl4vniuq" path="res://foliage/sprite_0100.png" id="5_84yks"]
+[ext_resource type="Image" uid="uid://cefurwcf4nwty" path="res://Cara/Color_0_0.res" id="6_5pbis"]
+[ext_resource type="Image" uid="uid://b43owreyskqwv" path="res://Cara/Foliage_0_0_0.res" id="7_leh5d"]
+[ext_resource type="Image" uid="uid://cn52a542wcnqd" path="res://Cara/Foliage_0_0_1.res" id="8_2k2qs"]
+[ext_resource type="Image" uid="uid://bbx3x7fnkpu5g" path="res://Cara/Heightmap_0_0.res" id="9_xvown"]
+[ext_resource type="Image" uid="uid://7upi2nfqe3oj" path="res://Cara/Splatmap_0_0_0.res" id="10_2pfwd"]
+
+[sub_resource type="TextureSetResource" id="TextureSetResource_36jyj"]
+albedoTexture = ExtResource("1_wjh8v")
+normalTexture = ExtResource("2_7qd4x")
+roughnessTexture = ExtResource("3_57obe")
+
+[sub_resource type="TextureSetsResource" id="TextureSetsResource_ukxgt"]
+textureSets = Array[TextureSetResource]([SubResource("TextureSetResource_36jyj")])
+
+[sub_resource type="FoliageDefinitionResource" id="FoliageDefinitionResource_7rjnv"]
+albedoTextures = Array[Texture2D]([ExtResource("4_r08tg")])
+
+[sub_resource type="FoliageResource" id="FoliageResource_8uoyt"]
+definition = SubResource("FoliageDefinitionResource_7rjnv")
+
+[sub_resource type="FoliageDefinitionResource" id="FoliageDefinitionResource_x827g"]
+albedoTextures = Array[Texture2D]([ExtResource("5_84yks")])
+
+[sub_resource type="FoliageResource" id="FoliageResource_0smny"]
+definition = SubResource("FoliageDefinitionResource_x827g")
+
+[sub_resource type="ZoneResource" id="ZoneResource_313dl"]
+heightMapImage = ExtResource("9_xvown")
+colorImage = ExtResource("6_5pbis")
+splatmapsImage = Array[Image]([ExtResource("10_2pfwd")])
+foliagesImage = Array[Image]([ExtResource("7_leh5d"), ExtResource("8_2k2qs")])
+
+[sub_resource type="ZonesResource" id="ZonesResource_pau64"]
+zones = Array[ZoneResource]([SubResource("ZoneResource_313dl")])
+
+[node name="Cara" type="Node3D" unique_id=1922357628]
+
+[node name="TerraBrush" type="TerraBrush" parent="." unique_id=1557841327]
+dataPath = "res://Cara"
+textureSets = SubResource("TextureSetsResource_ukxgt")
+foliages = Array[FoliageResource]([SubResource("FoliageResource_8uoyt"), SubResource("FoliageResource_0smny")])
+terrainZones = SubResource("ZonesResource_pau64")
+metadata/_edit_lock_ = true

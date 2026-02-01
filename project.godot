@@ -11,17 +11,17 @@ config_version=5
 [application]
 
 config/name="sei la irmao"
-run/main_scene="uid://bnbhu1shht5du"
-config/features=PackedStringArray("4.5", "Mobile")
+run/main_scene="uid://kg7qoedxth8e"
+config/features=PackedStringArray("4.6", "C#", "Mobile")
 config/icon="res://icon.svg"
+
+[dotnet]
+
+project/assembly_name="sei la irmao"
 
 [physics]
 
 3d/physics_engine="Jolt Physics"
-
-[rendering]
-
-renderer/rendering_method="mobile"
 
 [shader_globals]
 

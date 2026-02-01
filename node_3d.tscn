@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=4 uid="uid://bnbhu1shht5du"]
+[gd_scene format=4 uid="uid://bnbhu1shht5du"]
 
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/brackeys-proto-controller-main/proto_controller.tscn" id="1_a202f"]
 [ext_resource type="Shader" uid="uid://usdkcmas2wrp" path="res://hehehehe.gdshader" id="1_r3fl7"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://clwjytox3818c" path="res://asdasdasdsa_PSX_Texture_64.jpg" id="6_6iypd"]
 [ext_resource type="Texture2D" uid="uid://ckes1t0oej16e" path="res://asdasdasdsa_Image_1.png" id="7_tereu"]
 [ext_resource type="Texture2D" uid="uid://cqyxd21us0qty" path="res://asdasdasdsa_Image_2.png" id="8_cdqbm"]
+[ext_resource type="PackedScene" uid="uid://sxsa748j6q16" path="res://arve.glb" id="8_jsk3o"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_jka67"]
 shader = ExtResource("1_r3fl7")
@@ -175,6 +176,28 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_w8yuk")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_wc5p8"]
+_surfaces = [{
+"aabb": AABB(-4.125, -0.5, -8.375, 8.25, 1, 16.75),
+"attribute_data": PackedByteArray("AACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/"),
+"format": 34359738391,
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 36,
+"vertex_data": PackedByteArray("AACEwAAAAL8AAAZBAACEwAAAAL8AAAbBAACEwAAAAD8AAAbBAACEQAAAAL8AAAbBAACEwAAAAL8AAAbBAACEwAAAAL8AAAZBAACEwAAAAD8AAAbBAACEwAAAAL8AAAbBAACEQAAAAL8AAAbBAACEwAAAAD8AAAbBAACEwAAAAD8AAAZBAACEwAAAAL8AAAZBAACEwAAAAL8AAAZBAACEwAAAAD8AAAZBAACEQAAAAD8AAAZBAACEQAAAAD8AAAZBAACEwAAAAD8AAAZBAACEwAAAAD8AAAbBAACEwAAAAL8AAAZBAACEQAAAAL8AAAZBAACEQAAAAL8AAAbBAACEQAAAAD8AAAZBAACEQAAAAL8AAAZBAACEwAAAAL8AAAZBAACEQAAAAL8AAAbBAACEQAAAAL8AAAZBAACEQAAAAD8AAAZBAACEQAAAAL8AAAbBAACEQAAAAD8AAAbBAACEwAAAAD8AAAbBAACEwAAAAD8AAAbBAACEQAAAAD8AAAbBAACEQAAAAD8AAAZBAACEQAAAAD8AAAZBAACEQAAAAD8AAAbBAACEQAAAAL8AAAbBAAD/f/9//n8AAP9//3/+fwAA/3//f/5//38AAP//AAD/fwAA//8AAP9/AAD//wAA/////wAA/z//////AAD/P/////8AAP8/AAD/f/9//n8AAP9//3/+fwAA/3//f/5//3//fwAA/z//f/9/AAD/P/9//38AAP8//3//////AAD/f/////8AAP9//////wAA/38AAP//AAD/fwAA//8AAP9/AAD//wAA/3//fwAA/z//f/9/AAD/P/9//38AAP8/////f/9//n////9//3/+f////3//f/5//////wAA/z//////AAD/P/////8AAP8//3//////AAD/f/////8AAP9//////wAA////f/9//n////9//3/+f////3//f/5/")
+}]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_jsk3o"]
+data = PackedVector3Array(-4.125, -0.5, 8.375, -4.125, -0.5, -8.375, -4.125, 0.5, -8.375, 4.125, -0.5, -8.375, -4.125, -0.5, -8.375, -4.125, -0.5, 8.375, -4.125, 0.5, -8.375, -4.125, -0.5, -8.375, 4.125, -0.5, -8.375, -4.125, 0.5, -8.375, -4.125, 0.5, 8.375, -4.125, -0.5, 8.375, -4.125, -0.5, 8.375, -4.125, 0.5, 8.375, 4.125, 0.5, 8.375, 4.125, 0.5, 8.375, -4.125, 0.5, 8.375, -4.125, 0.5, -8.375, -4.125, -0.5, 8.375, 4.125, -0.5, 8.375, 4.125, -0.5, -8.375, 4.125, 0.5, 8.375, 4.125, -0.5, 8.375, -4.125, -0.5, 8.375, 4.125, -0.5, -8.375, 4.125, -0.5, 8.375, 4.125, 0.5, 8.375, 4.125, -0.5, -8.375, 4.125, 0.5, -8.375, -4.125, 0.5, -8.375, -4.125, 0.5, -8.375, 4.125, 0.5, -8.375, 4.125, 0.5, 8.375, 4.125, 0.5, 8.375, 4.125, 0.5, -8.375, 4.125, -0.5, -8.375)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_wc5p8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jsk3o"]
+albedo_texture = ExtResource("7_tereu")
+
+[sub_resource type="SphereMesh" id="SphereMesh_4arys"]
+material = SubResource("StandardMaterial3D_jsk3o")
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_imku0"]
 
@@ -377,42 +400,47 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_orqsm")
 
-[sub_resource type="SphereShape3D" id="SphereShape3D_wc5p8"]
+[node name="Node3D" type="Node3D" unique_id=649347179]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jsk3o"]
-albedo_texture = ExtResource("7_tereu")
-
-[sub_resource type="SphereMesh" id="SphereMesh_4arys"]
-material = SubResource("StandardMaterial3D_jsk3o")
-
-[node name="Node3D" type="Node3D"]
-
-[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+[node name="SubViewportContainer" type="SubViewportContainer" parent="." unique_id=790558755]
 material = SubResource("ShaderMaterial_jka67")
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer" unique_id=1500744390]
 handle_input_locally = false
 size = Vector2i(1152, 648)
 render_target_update_mode = 4
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="SubViewportContainer/SubViewport"]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="SubViewportContainer/SubViewport" unique_id=23413580]
 environment = SubResource("Environment_noarx")
 compositor = SubResource("Compositor_a0tk4")
 
-[node name="Root Scene" type="Node3D" parent="SubViewportContainer/SubViewport"]
-transform = Transform3D(1.2, -5.3644182e-08, 0, 5.3644182e-08, 1.2, 0, 0, 0, 1.2, -1.4000005, 2.1000004, -9.000001)
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="SubViewportContainer/SubViewport/WorldEnvironment" unique_id=839516599]
+transform = Transform3D(-1.4950173e-08, -0.9396927, 0.34202012, -4.1075264e-08, 0.34202012, 0.9396927, -1, 8.881784e-16, -4.3711385e-08, 14.200012, -132.9, 111)
+light_color = Color(1, 0.98039216, 0.92941177, 1)
+light_energy = 0.483
+light_indirect_energy = 0.794
+light_volumetric_fog_energy = 4.877
+light_angular_distance = 11.1
+light_bake_mode = 1
+shadow_enabled = true
+shadow_bias = 0.258
+shadow_normal_bias = 10.0
+shadow_transmittance_bias = 1.288
+shadow_blur = 10.0
 
-[node name="RootNode" type="Node3D" parent="SubViewportContainer/SubViewport/Root Scene"]
+[node name="Root Scene" type="Node3D" parent="SubViewportContainer/SubViewport" unique_id=858709629]
+transform = Transform3D(1.2, -5.3644182e-08, 0, 5.3644182e-08, 1.2, 0, 0, 0, 1.2, -1.4000005, 2.6100004, -9.000001)
+
+[node name="RootNode" type="Node3D" parent="SubViewportContainer/SubViewport/Root Scene" unique_id=1584578064]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.20000002, -0.3, -0.100000024)
 
-[node name="Candle" type="MeshInstance3D" parent="SubViewportContainer/SubViewport/Root Scene/RootNode"]
+[node name="Candle" type="MeshInstance3D" parent="SubViewportContainer/SubViewport/Root Scene/RootNode" unique_id=1048391988]
 transform = Transform3D(100.000015, 0, 0, 0, 100.000015, -4.371139e-06, 0, 4.371139e-06, 100, 0, 0, 0.099999905)
 mesh = SubResource("ArrayMesh_7gh2r")
-skeleton = NodePath("")
 
-[node name="OmniLight3D" type="OmniLight3D" parent="SubViewportContainer/SubViewport/Root Scene"]
+[node name="OmniLight3D" type="OmniLight3D" parent="SubViewportContainer/SubViewport/Root Scene" unique_id=567259773]
 transform = Transform3D(0.83333325, 3.72529e-08, 0, -3.72529e-08, 0.83333325, 0, 0, 0, 0.83333325, -0.21249998, 0.033333063, 0.083334446)
 light_color = Color(0.97577196, 0.48880184, 0.8160677, 1)
 light_energy = 1.492
@@ -420,127 +448,143 @@ light_indirect_energy = 1.033
 light_volumetric_fog_energy = 1.33
 light_size = 0.397
 light_specular = 4.148
+shadow_enabled = true
+shadow_bias = 0.129
+shadow_normal_bias = 4.5
+shadow_transmittance_bias = 3.973
+shadow_blur = 2.71
 
-[node name="ProtoController" parent="SubViewportContainer/SubViewport" instance=ExtResource("1_a202f")]
+[node name="ProtoController" parent="SubViewportContainer/SubViewport" unique_id=1358975233 instance=ExtResource("1_a202f")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.576606, 1.7000002, -7.6000004)
 
-[node name="asdasdasdsa2" type="Node3D" parent="."]
-transform = Transform3D(0.015, 0, 0, 0, 0.015, 0, 0, 0, 0.015, -9.2, 0, -9.400001)
+[node name="floor2" type="StaticBody3D" parent="SubViewportContainer/SubViewport" unique_id=699055083]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.6499996, 0, -7.8400006)
 
-[node name="Sketchfab_model" type="Node3D" parent="asdasdasdsa2"]
-transform = Transform3D(1, 0, 0, 0, -3.5762787e-07, 0.99999994, 0, -0.99999994, -3.5762787e-07, 0, 0, 0)
+[node name="CSGBakedMeshInstance3D" type="MeshInstance3D" parent="SubViewportContainer/SubViewport/floor2" unique_id=1259316938]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.069999695, 0.059999973, 0)
+mesh = SubResource("ArrayMesh_wc5p8")
 
-[node name="Collada visual scene group" type="Node3D" parent="asdasdasdsa2/Sketchfab_model"]
-transform = Transform3D(1, 0, 0, 0, -3.5762787e-07, -0.99999994, 0, 0.99999994, -3.5762787e-07, 0, 0, 0)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SubViewportContainer/SubViewport/floor2" unique_id=564513951]
+shape = SubResource("ConcavePolygonShape3D_jsk3o")
 
-[node name="piano_base_low" type="Node3D" parent="asdasdasdsa2/Sketchfab_model/Collada visual scene group"]
-transform = Transform3D(100, 0, 0, 0, -3.5762783e-05, 99.999985, 0, -99.999985, -3.5762783e-05, 0, 0, 0)
+[node name="floor" type="StaticBody3D" parent="SubViewportContainer/SubViewport" unique_id=512416722]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.625, 0, -7.875)
 
-[node name="defaultMaterial_002" type="MeshInstance3D" parent="asdasdasdsa2/Sketchfab_model/Collada visual scene group/piano_base_low"]
-transform = Transform3D(0.99999976, 0, 0, 0, 1, 5.684342e-14, 0, -5.684342e-14, 1, 0, 0, 0)
-mesh = SubResource("ArrayMesh_72oyb")
-skeleton = NodePath("")
+[node name="CSGBakedMeshInstance3D" type="MeshInstance3D" parent="SubViewportContainer/SubViewport/floor" unique_id=176988174]
+mesh = SubResource("ArrayMesh_wc5p8")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="asdasdasdsa2/Sketchfab_model/Collada visual scene group/piano_base_low/defaultMaterial_002"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SubViewportContainer/SubViewport/floor" unique_id=1400957633]
+shape = SubResource("ConcavePolygonShape3D_jsk3o")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="asdasdasdsa2/Sketchfab_model/Collada visual scene group/piano_base_low/defaultMaterial_002/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_wc5p8")
-
-[node name="piano_bottom_front_panel_low" type="Node3D" parent="asdasdasdsa2/Sketchfab_model/Collada visual scene group"]
-transform = Transform3D(100, 0, 0, 0, -3.5762783e-05, 99.999985, 0, -99.999985, -3.5762783e-05, 0, 0, 0)
-
-[node name="piano_bottom_low" type="Node3D" parent="asdasdasdsa2/Sketchfab_model/Collada visual scene group"]
-transform = Transform3D(100, 0, 0, 0, -3.5762783e-05, 99.999985, 0, -99.999985, -3.5762783e-05, 0, 0, 0)
-
-[node name="defaultMaterial_003" type="MeshInstance3D" parent="asdasdasdsa2/Sketchfab_model/Collada visual scene group/piano_bottom_low"]
-mesh = SubResource("ArrayMesh_sr4st")
-skeleton = NodePath("")
-
-[node name="piano_foot_low" type="Node3D" parent="asdasdasdsa2/Sketchfab_model/Collada visual scene group"]
-transform = Transform3D(100, 0, 0, 0, -3.5762783e-05, 99.999985, 0, -99.999985, -3.5762783e-05, 0, 0, 0)
-
-[node name="defaultMaterial_008" type="MeshInstance3D" parent="asdasdasdsa2/Sketchfab_model/Collada visual scene group/piano_foot_low"]
-mesh = SubResource("ArrayMesh_h6mhn")
-skeleton = NodePath("")
-
-[node name="piano_keys_low" type="Node3D" parent="asdasdasdsa2/Sketchfab_model/Collada visual scene group"]
-transform = Transform3D(100, 0, 0, 0, -3.5762783e-05, 99.999985, 0, -99.999985, -3.5762783e-05, 0, 0, 0)
-
-[node name="defaultMaterial" type="MeshInstance3D" parent="asdasdasdsa2/Sketchfab_model/Collada visual scene group/piano_keys_low"]
-mesh = SubResource("ArrayMesh_00wnm")
-skeleton = NodePath("")
-
-[node name="piano_logo_low" type="Node3D" parent="asdasdasdsa2/Sketchfab_model/Collada visual scene group"]
-transform = Transform3D(100, 0, 0, 0, -3.5762783e-05, 99.999985, 0, -99.999985, -3.5762783e-05, 0, 0, 0)
-
-[node name="piano_pedal_holder_back_low" type="Node3D" parent="asdasdasdsa2/Sketchfab_model/Collada visual scene group"]
-transform = Transform3D(100, 0, 0, 0, -3.5762783e-05, 99.999985, 0, -99.999985, -3.5762783e-05, 0, 0, 0)
-
-[node name="piano_pedal_holder_low" type="Node3D" parent="asdasdasdsa2/Sketchfab_model/Collada visual scene group"]
-transform = Transform3D(100, 0, 0, 0, -3.5762783e-05, 99.999985, 0, -99.999985, -3.5762783e-05, 0, 0, 0)
-
-[node name="piano_pedal_strings_low" type="Node3D" parent="asdasdasdsa2/Sketchfab_model/Collada visual scene group"]
-transform = Transform3D(100, 0, 0, 0, -3.5762783e-05, 99.999985, 0, -99.999985, -3.5762783e-05, 0, 0, 0)
-
-[node name="piano_pedals_low" type="Node3D" parent="asdasdasdsa2/Sketchfab_model/Collada visual scene group"]
-transform = Transform3D(100, 0, 0, 0, -3.5762783e-05, 99.999985, 0, -99.999985, -3.5762783e-05, 0, 0, 0)
-
-[node name="piano_top_low" type="Node3D" parent="asdasdasdsa2/Sketchfab_model/Collada visual scene group"]
-transform = Transform3D(100, 0, 0, 0, -3.5762783e-05, 99.999985, 0, -99.999985, -3.5762783e-05, 0, 0, 0)
-
-[node name="defaultMaterial_007" type="MeshInstance3D" parent="asdasdasdsa2/Sketchfab_model/Collada visual scene group/piano_top_low"]
-mesh = SubResource("ArrayMesh_0o3il")
-skeleton = NodePath("")
-
-[node name="CSGBox3D4" type="CSGBox3D" parent="."]
+[node name="CSGBox3D4" type="CSGBox3D" parent="SubViewportContainer/SubViewport" unique_id=876022761]
 transform = Transform3D(2.6077025e-08, 4.3711395e-08, 1, -1, -1.6885345e-08, 2.6077021e-08, 1.6885345e-08, -1, 4.371138e-08, -3.184991, 4.1149917, -15.749999)
 use_collision = true
 size = Vector3(7.25, 1, 7.3799996)
 
-[node name="CSGBox3D5" type="CSGBox3D" parent="."]
+[node name="CSGBox3D5" type="CSGBox3D" parent="SubViewportContainer/SubViewport" unique_id=670334852]
 transform = Transform3D(1, 1.0430813e-07, 0, 0, -4.371139e-08, -1, -1.0430813e-07, 1, -4.371139e-08, -3.124999, 4.184992, 0.07500076)
 use_collision = true
 size = Vector3(7.25, 1, 7.3799996)
 
-[node name="CSGBox3D3" type="CSGBox3D" parent="."]
+[node name="CSGBox3D3" type="CSGBox3D" parent="SubViewportContainer/SubViewport" unique_id=2057112720]
 transform = Transform3D(-7.8231096e-08, 1, 0, -1, -7.8231096e-08, 0, 0, 0, 1, -7.25, 4.625, -7.799999)
 use_collision = true
 size = Vector3(8.25, 1, 16.9)
 
-[node name="CSGBox3D6" type="CSGBox3D" parent="."]
+[node name="CSGBox3D6" type="CSGBox3D" parent="SubViewportContainer/SubViewport" unique_id=743031789]
 transform = Transform3D(-1, -5.2154064e-08, 0, 5.2154064e-08, -1, 0, 0, 0, 1, -2.6249998, 8.25, -7.7749996)
 use_collision = true
 size = Vector3(8.25, 1, 16.75)
 
-[node name="CSGBox3D2" type="CSGBox3D" parent="."]
+[node name="CSGBox3D2" type="CSGBox3D" parent="SubViewportContainer/SubViewport" unique_id=1639960089]
 transform = Transform3D(-1, -5.2154064e-08, 0, 5.2154064e-08, -1, 0, 0, 0, 1, -2.6249998, 8.25, -7.7749996)
 use_collision = true
 size = Vector3(8.25, 1, 16.75)
 
-[node name="CSGBox3D7" type="CSGBox3D" parent="."]
-transform = Transform3D(2.6077032e-08, -1, 0, 1, 2.6077032e-08, 0, 0, 0, 1, 1, 3.625, -7.825)
+[node name="CSGBox3D7" type="CSGBox3D" parent="SubViewportContainer/SubViewport" unique_id=1792879863]
+transform = Transform3D(2.6077032e-08, -1, 0, 1, 2.6077032e-08, 0, 0, 0, 1, 1, 4, -7.825)
 use_collision = true
-size = Vector3(8.25, 1, 16.75)
+size = Vector3(7.5, 1, 16.75)
 
-[node name="CSGCylinder3D" type="CSGCylinder3D" parent="CSGBox3D7"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.23650002, -6)
+[node name="CSGBox3D" type="CSGBox3D" parent="SubViewportContainer/SubViewport/CSGBox3D7" unique_id=96210058]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.55, -0.099999905, -6.5999994)
 operation = 2
-radius = 1.405
-height = 2.273
-sides = 5
+size = Vector3(4.1, 1.8000001, 2)
 
-[node name="CSGBox3D" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.625, 0, -7.875)
-use_collision = true
-size = Vector3(8.25, 1, 16.75)
+[node name="ball" type="RigidBody3D" parent="SubViewportContainer/SubViewport" unique_id=1474115095]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.3999996, 0, -8.315997)
 
-[node name="RigidBody3D" type="RigidBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10.415997)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SubViewportContainer/SubViewport/ball" unique_id=350024515]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2000001, 0, 0)
 shape = SubResource("SphereShape3D_wc5p8")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D/CollisionShape3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9116783, 3.0052614, 1.1371174)
+[node name="MeshInstance3D" type="MeshInstance3D" parent="SubViewportContainer/SubViewport/ball/CollisionShape3D" unique_id=170322880]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5883213, 2.0052614, -1.6628828)
 mesh = SubResource("SphereMesh_4arys")
 skeleton = NodePath("../..")
+
+[node name="asdasdasdsa2" type="Node3D" parent="." unique_id=244645441]
+transform = Transform3D(0.015, 0, 0, 0, 0.015, 0, 0, 0, 0.015, -9.2, 0.5, -9.400001)
+
+[node name="Sketchfab_model" type="Node3D" parent="asdasdasdsa2" unique_id=365781201]
+transform = Transform3D(1, 0, 0, 0, -3.5762787e-07, 0.99999994, 0, -0.99999994, -3.5762787e-07, 0, 0, 0)
+
+[node name="Collada visual scene group" type="Node3D" parent="asdasdasdsa2/Sketchfab_model" unique_id=1311034711]
+transform = Transform3D(1, 0, 0, 0, -3.5762787e-07, -0.99999994, 0, 0.99999994, -3.5762787e-07, 0, 0, 0)
+
+[node name="piano_base_low" type="Node3D" parent="asdasdasdsa2/Sketchfab_model/Collada visual scene group" unique_id=1685923388]
+transform = Transform3D(100, 0, 0, 0, -3.5762783e-05, 99.999985, 0, -99.999985, -3.5762783e-05, 0, 0, 0)
+
+[node name="defaultMaterial_002" type="MeshInstance3D" parent="asdasdasdsa2/Sketchfab_model/Collada visual scene group/piano_base_low" unique_id=1645975064]
+transform = Transform3D(0.99999976, 0, 0, 0, 1, 5.684342e-14, 0, -5.684342e-14, 1, 0, 0, 0)
+mesh = SubResource("ArrayMesh_72oyb")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="asdasdasdsa2/Sketchfab_model/Collada visual scene group/piano_base_low/defaultMaterial_002" unique_id=431400781]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="asdasdasdsa2/Sketchfab_model/Collada visual scene group/piano_base_low/defaultMaterial_002/StaticBody3D" unique_id=1620650401]
+shape = SubResource("ConcavePolygonShape3D_wc5p8")
+
+[node name="piano_bottom_front_panel_low" type="Node3D" parent="asdasdasdsa2/Sketchfab_model/Collada visual scene group" unique_id=1939085752]
+transform = Transform3D(100, 0, 0, 0, -3.5762783e-05, 99.999985, 0, -99.999985, -3.5762783e-05, 0, 0, 0)
+
+[node name="piano_bottom_low" type="Node3D" parent="asdasdasdsa2/Sketchfab_model/Collada visual scene group" unique_id=1864435012]
+transform = Transform3D(100, 0, 0, 0, -3.5762783e-05, 99.999985, 0, -99.999985, -3.5762783e-05, 0, 0, 0)
+
+[node name="defaultMaterial_003" type="MeshInstance3D" parent="asdasdasdsa2/Sketchfab_model/Collada visual scene group/piano_bottom_low" unique_id=60391566]
+mesh = SubResource("ArrayMesh_sr4st")
+
+[node name="piano_foot_low" type="Node3D" parent="asdasdasdsa2/Sketchfab_model/Collada visual scene group" unique_id=1879465611]
+transform = Transform3D(100, 0, 0, 0, -3.5762783e-05, 99.999985, 0, -99.999985, -3.5762783e-05, 0, 0, 0)
+
+[node name="defaultMaterial_008" type="MeshInstance3D" parent="asdasdasdsa2/Sketchfab_model/Collada visual scene group/piano_foot_low" unique_id=1866870016]
+mesh = SubResource("ArrayMesh_h6mhn")
+
+[node name="piano_keys_low" type="Node3D" parent="asdasdasdsa2/Sketchfab_model/Collada visual scene group" unique_id=11570803]
+transform = Transform3D(100, 0, 0, 0, -3.5762783e-05, 99.999985, 0, -99.999985, -3.5762783e-05, 0, 0, 0)
+
+[node name="defaultMaterial" type="MeshInstance3D" parent="asdasdasdsa2/Sketchfab_model/Collada visual scene group/piano_keys_low" unique_id=605536868]
+mesh = SubResource("ArrayMesh_00wnm")
+
+[node name="piano_logo_low" type="Node3D" parent="asdasdasdsa2/Sketchfab_model/Collada visual scene group" unique_id=553161355]
+transform = Transform3D(100, 0, 0, 0, -3.5762783e-05, 99.999985, 0, -99.999985, -3.5762783e-05, 0, 0, 0)
+
+[node name="piano_pedal_holder_back_low" type="Node3D" parent="asdasdasdsa2/Sketchfab_model/Collada visual scene group" unique_id=1338530790]
+transform = Transform3D(100, 0, 0, 0, -3.5762783e-05, 99.999985, 0, -99.999985, -3.5762783e-05, 0, 0, 0)
+
+[node name="piano_pedal_holder_low" type="Node3D" parent="asdasdasdsa2/Sketchfab_model/Collada visual scene group" unique_id=907673420]
+transform = Transform3D(100, 0, 0, 0, -3.5762783e-05, 99.999985, 0, -99.999985, -3.5762783e-05, 0, 0, 0)
+
+[node name="piano_pedal_strings_low" type="Node3D" parent="asdasdasdsa2/Sketchfab_model/Collada visual scene group" unique_id=741622308]
+transform = Transform3D(100, 0, 0, 0, -3.5762783e-05, 99.999985, 0, -99.999985, -3.5762783e-05, 0, 0, 0)
+
+[node name="piano_pedals_low" type="Node3D" parent="asdasdasdsa2/Sketchfab_model/Collada visual scene group" unique_id=136750573]
+transform = Transform3D(100, 0, 0, 0, -3.5762783e-05, 99.999985, 0, -99.999985, -3.5762783e-05, 0, 0, 0)
+
+[node name="piano_top_low" type="Node3D" parent="asdasdasdsa2/Sketchfab_model/Collada visual scene group" unique_id=1436021067]
+transform = Transform3D(100, 0, 0, 0, -3.5762783e-05, 99.999985, 0, -99.999985, -3.5762783e-05, 0, 0, 0)
+
+[node name="defaultMaterial_007" type="MeshInstance3D" parent="asdasdasdsa2/Sketchfab_model/Collada visual scene group/piano_top_low" unique_id=464570180]
+mesh = SubResource("ArrayMesh_0o3il")
+
+[node name="arve" parent="." unique_id=1215078879 instance=ExtResource("8_jsk3o")]
+transform = Transform3D(0.08682411, 0, 0.49240386, 0, 0.5, 0, -0.49240386, 0, 0.08682411, 4.1000004, 0.5000001, -5.8)

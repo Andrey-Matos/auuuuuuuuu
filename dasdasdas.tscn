@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://dvjaj71k5sp3l"]
+
+[ext_resource type="Texture2D" uid="uid://dnw0hwj3cy5iv" path="res://textures/Grass005_1K-JPG_Color.jpg" id="1_pihui"]
+[ext_resource type="Texture2D" uid="uid://codgdqcbp6sdx" path="res://textures/Grass005_1K-JPG_NormalGL.jpg" id="2_5hfi7"]
+[ext_resource type="Texture2D" uid="uid://cthvah1qq0san" path="res://textures/Grass005_1K-JPG_Roughness.jpg" id="3_km821"]
+[ext_resource type="Image" uid="uid://b65ecbaxp3ymf" path="res://Dasdasdas/Color_0_0.res" id="4_13o5p"]
+[ext_resource type="Image" uid="uid://k253yok0mlxd" path="res://Dasdasdas/Heightmap_0_0.res" id="5_2vvmv"]
+[ext_resource type="Image" uid="uid://dt7m4ydd6r2v0" path="res://Dasdasdas/Splatmap_0_0_0.res" id="6_2x3ny"]
+
+[sub_resource type="TextureSetResource" id="TextureSetResource_m40rb"]
+albedoTexture = ExtResource("1_pihui")
+normalTexture = ExtResource("2_5hfi7")
+roughnessTexture = ExtResource("3_km821")
+
+[sub_resource type="TextureSetsResource" id="TextureSetsResource_mvbvr"]
+textureSets = Array[TextureSetResource]([SubResource("TextureSetResource_m40rb")])
+
+[sub_resource type="ZoneResource" id="ZoneResource_vjoml"]
+heightMapImage = ExtResource("5_2vvmv")
+colorImage = ExtResource("4_13o5p")
+splatmapsImage = Array[Image]([ExtResource("6_2x3ny")])
+
+[sub_resource type="ZonesResource" id="ZonesResource_pftn5"]
+zones = Array[ZoneResource]([SubResource("ZoneResource_vjoml")])
+
+[node name="Dasdasdas" type="Node3D" unique_id=1618858929]
+
+[node name="TerraBrush" type="TerraBrush" parent="." unique_id=571868776]
+dataPath = "res://Dasdasdas"
+textureSets = SubResource("TextureSetsResource_mvbvr")
+terrainZones = SubResource("ZonesResource_pftn5")
+metadata/_edit_lock_ = true
