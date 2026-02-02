@@ -18,7 +18,6 @@
 [ext_resource type="Image" uid="uid://c44ctd2oslb32" path="res://Terrenoso/Splatmap_0_0_0.res" id="6_jgun5"]
 [ext_resource type="Texture2D" uid="uid://cqyxd21us0qty" path="res://asdasdasdsa_Image_2.png" id="7_wu8ea"]
 [ext_resource type="PackedScene" uid="uid://sxsa748j6q16" path="res://arve.glb" id="8_niabm"]
-[ext_resource type="Texture2D" uid="uid://88p68dlql3tw" path="res://sprite_0055.png" id="12_7vumb"]
 [ext_resource type="Texture2D" uid="uid://dyon6aokbda47" path="res://arve_Image_2.png" id="13_sp2qc"]
 [ext_resource type="Image" uid="uid://dmp0dim4ueguk" path="res://Terrenoso/Foliage_0_0_1.res" id="16_tnf0k"]
 
@@ -446,6 +445,9 @@ roughnessTexture = ExtResource("4_0kc20")
 [sub_resource type="TextureSetsResource" id="TextureSetsResource_ahxwg"]
 textureSets = Array[TextureSetResource]([SubResource("TextureSetResource_exl3k")])
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2yqmm"]
+load_path = "res://.godot/imported/sprite_0055.png-d606e8322fd7ff9f49f8188ae938b3a2.ctex"
+
 [sub_resource type="ORMMaterial3D" id="ORMMaterial3D_7vumb"]
 cull_mode = 2
 depth_draw_mode = 2
@@ -462,7 +464,7 @@ center_offset = Vector3(0, 1, 0)
 
 [sub_resource type="FoliageDefinitionResource" id="FoliageDefinitionResource_rhxeb"]
 mesh = SubResource("QuadMesh_jgun5")
-albedoTextures = Array[Texture2D]([ExtResource("12_7vumb")])
+albedoTextures = Array[Texture2D]([SubResource("CompressedTexture2D_2yqmm")])
 useGroundColor = true
 
 [sub_resource type="FoliageResource" id="FoliageResource_u8846"]

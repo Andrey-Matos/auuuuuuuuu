@@ -588,3 +588,6 @@ mesh = SubResource("ArrayMesh_0o3il")
 
 [node name="arve" parent="." unique_id=1215078879 instance=ExtResource("8_jsk3o")]
 transform = Transform3D(0.08682411, 0, 0.49240386, 0, 0.5, 0, -0.49240386, 0, 0.08682411, 4.1000004, 0.5000001, -5.8)
+
+[node name="ProtoController" parent="." unique_id=542675526 instance=ExtResource("1_a202f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.576606, 1.7000002, -7.6000004)
